@@ -11,13 +11,15 @@ To start with mysql we are going to use the docker mysql container
 
 `docker run -p 13306:3306 --name mysql-local -e MYSQL_ROOT_PASSWORD=notes -d mysql:latest `
 
-port 13306 for outside and inside 3306 
-name mysql-local 
--e is enviornmnet variable 
-MYSQL_ROOT_PASSWORD is the root password 
--d is to run the file on background
-mysql is the name of the image
-latest is the tag of the image
+
+Port : 13306 for outside and inside 3306  
+name : mysql-local  
+-e   : enviornmnet variable  
+-d   : run the file on background  
+mysql : name of the image  
+latest : tag of the image  
+MYSQL_ROOT_PASSWORD : root password   
+  
 
 Once you run the above command we can check the status by  
 
