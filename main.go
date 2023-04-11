@@ -40,10 +40,10 @@ func main() {
 			log.Fatal(err)
 		}
 
-		fmt.Printf("%v\n", note)
+		fmt.Printf("%b\n", note)
 	}
 
-	sql := "insert into noted (ID, Noteslist) values (3, 'This is my fourth note from GOapp');"
+	sql := "insert into noted (ID, Noteslist) values (5, 'This is my fifth note from GOapp');"
 	res2, err := db.Exec(sql)
 
 	if err != nil {
